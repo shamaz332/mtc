@@ -60,7 +60,7 @@ const Header = () => {
       </div>
 
       {/* Mobile Header - Visible on screens smaller than md */}
-      <div className="md:hidden flex items-center justify-Pbetween w-full h-[60px] px-4 relative">
+      <div className="md:hidden flex items-center justify-between w-full h-[60px] px-4 relative">
         {/* Mobile Logo */}
         <div className="flex-shrink-0">
           <Image

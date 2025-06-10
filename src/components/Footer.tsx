@@ -18,7 +18,7 @@ const Footer = () => {
 
         <div className="flex justify-center mt-[44px]">
           {/* Navigation Links - Horizontal Layout */}
-          <div className="flex flex-col sm:flex-row text-left gap-30">
+          <div className="flex flex-col sm:flex-row text-left gap-10 lg:gap-20 2xl:gap-30">
             {/* About Column */}
             <div className="mb-8 lg:mb-12">
               <h3 className="font-helvetica text-lg lg:text-2xl tracking-[3px] mb-7 font-bold text-white">
