@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import FeaturesSection from '@/components/FeaturesSection';
+import AboutUsSection from '@/components/AboutUsSection';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <FeaturesSection />
+      <AboutUsSection />
       {/* Other sections will go here */}
     </main>
   );
