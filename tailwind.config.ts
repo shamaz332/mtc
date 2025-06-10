@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         white: '#FFFFFF',
         black: '#000000',
-        gold: '#000000',
+        gold: '#D4B254',
         dark: '#222222',
         light: '#EEEEEE',
         gray: '#777777',
