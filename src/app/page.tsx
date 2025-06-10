@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import FeaturesSection from '@/components/FeaturesSection';
 import AboutUsSection from '@/components/AboutUsSection';
+import GallerySection from '@/components/GallerySection';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <FeaturesSection />
       <AboutUsSection />
+      <GallerySection />
       {/* Other sections will go here */}
     </main>
   );
