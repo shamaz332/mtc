@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const GallerySection = () => {
   return (
-    <section className="w-full text-center bg-white px-4 md:px-8 2xl:px-[350px]">
+    <section className="w-full text-center bg-white px-4 md:px-8 3xl:px-[350px]">
       <h2 className="text-[32px] sm:text-4xl lg:text-[32px] font-helvetica font-bold text-[#222222] leading-tight mt-10 md:mt-24 tracking-normal">
         Customer Gallery
       </h2>
