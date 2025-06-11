@@ -53,7 +53,7 @@ const GallerySection = () => {
           />
         </div>
       </div>
-      <button className="bg-[#D4B254] text-white font-roboto text-[15px] rounded-[30px] px-8 py-3 uppercase tracking-[3px] transition-all duration-300 hover:opacity-90 mb-24">
+      <button className="bg-[#D4B254] text-white font-roboto text-[15px] rounded-[30px] px-8 py-3 uppercase tracking-[3px] transition-all duration-300 hover:opacity-90 mb-24 h-auto w-auto md:h-[60px] md:w-[184px]">
         VIEW MORE
       </button>
     </section>

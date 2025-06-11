@@ -3,17 +3,31 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="w-full text-center px-4 md:px-8 3xl:px-[350px] bg-[#222222] py-10 text-white lg:px-16">
-      <div className="max-w-7xl mx-auto">
+    <footer className="w-full text-center px-4 md:px-8 3xl:px-[350px] py-10 text-white lg:px-16 relative overflow-hidden">
+      {/* Background Black with Faint Image */}
+      <div className="absolute inset-0 bg-black z-0">
+        <Image 
+          src="/assets/hero.png" 
+          alt="Hero Image" 
+          layout="fill" 
+          objectFit="cover" 
+          className="opacity-20" // Make image faint
+        />
+      </div>
+
+      <div className="max-w-7xl mx-auto relative z-20">
         <div className="mb-12 flex items-center justify-center relative">
-          {/* Left horizontal line */}
-          <div className="flex-grow h-px bg-gray-400 mr-4"></div>
+          {/* Flex container for Left and Right horizontal lines */}
+          <div className="flex items-center justify-center w-full">
+            {/* Left horizontal line */}
+            <div className="flex-grow h-px bg-white opacity-30 mr-4"></div>
 
-          {/* Logo */}
-          <Image src="/assets/logo.svg" alt="MK Logo" width={84} height={33} />
+            {/* Logo */}
+            <Image src="/assets/logo.svg" alt="MK Logo" width={84} height={33} />
 
-          {/* Right horizontal line */}
-          <div className="flex-grow h-px bg-gray-400 ml-4"></div>
+            {/* Right horizontal line */}
+            <div className="flex-grow h-px bg-white opacity-30 ml-4"></div>
+          </div>
         </div>
 
         <div className="flex justify-center mt-[44px]">
