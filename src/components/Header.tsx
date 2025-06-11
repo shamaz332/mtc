@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="absolute top-[30px] bottom-[31px] left-1/2 -translate-x-1/2 w-full max-w-[1300px] h-[81px] z-20 md:px-0 border-b-[1px] border-white/30">
       {/* Desktop Header - Visible on md and larger screens */}
-      <div className="hidden md:flex justify-between align-center items-center w-full h-[50px] relative">
+      <div className="hidden lg:flex justify-between align-center items-center w-full h-[50px] relative pl-4 pr-4 2xl:pl-0 2xl:pr-0">
         {/* Social Icons */}
         <div className="flex gap-4 pl-2">
           <i className="fab fa-facebook-f text-white text-[16px] cursor-pointer" />
@@ -60,7 +60,7 @@ const Header = () => {
       </div>
 
       {/* Mobile Header - Visible on screens smaller than md */}
-      <div className="md:hidden flex items-center justify-between w-full h-[60px] px-4 relative">
+      <div className="lg:hidden flex items-center justify-between w-full h-[60px] px-4 relative">
         {/* Mobile Logo */}
         <div className="flex-shrink-0">
           <Image

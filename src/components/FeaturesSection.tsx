@@ -18,14 +18,14 @@ const FeaturesSection = () => {
         </div>
 
         {/* Content on the right */}
-        <div className="w-full md:w-1/2 text-center md:text-left pl-0 md:pl-8 2xl:pl-16 pt-6 2xl:pt-0 flex flex-col justify-center items-center md:items-start">
-          <span className="text-[13px] font-roboto font-normal tracking-[3px] uppercase text-[#D4B254] mb-3 block">
+        <div className="w-full md:w-1/2 text-center md:text-left pl-0 md:pl-8 2xl:pl-16 pt-6 2xl:pb-0 flex flex-col justify-center items-center md:items-start">
+          <span className="text-[13px] font-roboto font-normal tracking-[3px] uppercase text-[#D4B254] mb-1 2xl:mb-3 block">
             QUALITY CRAFTSMANSHIP FROM BUILD TO DELIVERY
           </span>
-          <h2 className="text-2xl sm:text-3xl 2xl:text-[42px] flex font-helvetica font-bold text-[#222222] leading-tight mb-4 md:mb-4 lg:mb:8 max-w-[520px]">
+          <h2 className="text-2xl sm:text-3xl 2xl:text-[42px] flex font-helvetica font-bold text-[#222222] leading-tight mb-4 2xl:mb:8 max-w-[520px]">
             Discover the beauty of a handmade kitchen
           </h2>
-          <p className="text-sm sm:text-base font-roboto font-normal text-[#777777] mb-4 md:mb-4 lg:mb:8 max-w-[630px] pr-12 2xl:pr-0">
+          <p className="text-sm sm:text-base font-roboto font-normal text-[#777777] mb-4 md:mb-2 2xl:mb:8 max-w-[630px] pr-12 2xl:pr-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget
             est sit amet sapien venenatis maximus vel in urna. Nam mauris arcu,
             feugiat in finibus vitae, sollicitudin id purus. Ut imperdiet, magna

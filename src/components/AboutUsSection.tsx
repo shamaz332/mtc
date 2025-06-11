@@ -11,7 +11,7 @@ const AboutUsSection = () => {
           alt="Left Arrow"
           width={71} // Adjust size as needed
           height={71} // Adjust size as needed
-          className="mr-[169px] hidden sm:block cursor-pointer"
+          className="mr-[100px] 2xl:mr-[169px] hidden sm:block cursor-pointer"
         />
 
         <div className="max-w-xl">
@@ -29,7 +29,7 @@ const AboutUsSection = () => {
           <p className="text-sm sm:text-base font-roboto font-normal text-[#777777] pb-9">
             Jane, Dundee
           </p>
-          <button className="bg-[#D4B254] text-white font-roboto text-[15px] rounded-[30px] px-5 py-2 sm:px-8 sm:py-3 uppercase tracking-[3px] transition-all duration-300 hover:opacity-90 h-auto w-auto md:h-[60px] md:w-[419px]">
+          <button className="bg-[#D4B254] text-white font-roboto text-[15px] rounded-[30px] px-5 py-2 sm:px-8 sm:py-3 uppercase tracking-[3px] transition-all duration-300 hover:opacity-90 h-auto w-auto md:h-[60px] lg:w-[419px]">
             FREQUENTLY ASKED QUESTIONS
           </button>
         </div>
@@ -40,7 +40,7 @@ const AboutUsSection = () => {
           alt="Right Arrow"
           width={71} // Adjust size as needed
           height={71} // Adjust size as needed
-          className="ml-[169px] hidden sm:block cursor-pointer"
+          className="ml-[100px] 2xl:ml-[169px] hidden sm:block cursor-pointer"
         />
       </div>
     </section>
