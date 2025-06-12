@@ -31,7 +31,9 @@ const FeaturesSection = () => {
             feugiat in finibus vitae, sollicitudin id purus. Ut imperdiet, magna
             eu pharetra tincidunt, mauris purus ultrices.
           </p>
-          <button className="bg-[#D4B254] text-white font-roboto text-[15px] rounded-[30px] px-8 py-3 uppercase tracking-[3px] transition-all duration-300 hover:opacity-90 h-auto w-auto md:h-[60px] md:w-[211px]">
+          <button
+            className="group relative bg-[#D4B254] hover:bg-[#C8A74B] hover:cursor-pointer text-white font-roboto px-[59px] py-[20px] text-sm sm:text-[15px] rounded-[30px] font-normal transition-all duration-300">
+            {/* className="bg-[#D4B254] text-white font-roboto text-[15px] rounded-[30px] px-8 py-3 uppercase tracking-[3px] transition-all duration-300 hover:opacity-90 h-auto w-auto md:h-[60px] md:w-[211px]"> */}
             ABOUT US
           </button>
         </div>

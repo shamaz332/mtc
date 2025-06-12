@@ -1,25 +1,53 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [0, 1, 2]; // Represents 3 slides for the background
 
+  const slideImages = [
+    "/assets/hero.png",
+    "/assets/hand_kitchen.png",
+    "/assets/hero.png",
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, [slides.length]);
+
   return (
-    <section className="relative w-full h-[700px] lg:h-[902px] flex flex-col items-center justify-end overflow-hidden px-4 md:px-8 lg:px-16">
-      <Image
-        src="/assets/hero.png"
-        alt="Luxury Kitchen Design"
-        layout="fill"
-        objectFit="cover"
-        className="z-0 transform scale-105 transition-transform duration-[2s] hover:scale-100"
-        priority
-      />
+    <section className="relative w-full h-screen flex flex-col items-center justify-end overflow-hidden px-4 md:px-8 lg:px-16">
+      <div className="absolute inset-0 w-full h-full overflow-hidden">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{
+            width: `${slideImages.length * 100}vw`, // Set width based on number of slides
+            transform: `translateX(-${currentSlide * 100}vw)`, // Slide to the left
+          }}
+        >
+          {slideImages.map((image, index) => (
+            <div key={index} className="w-full h-screen flex-shrink-0"
+            style={{ flex: "0 0 100vw" }}>
+              <Image
+                src={image}
+                alt={`Slide ${index + 1}`}
+                layout="fill"
+                objectFit="cover"
+                priority
+              />
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/* Main content - text and button */}
-      <div className="z-20 flex flex-col items-center text-center w-full max-w-[686px] mx-auto pb-20 sm:pb-24 md:pb-34 lg:pb-80">
+      <div className="z-20 h-full flex flex-col items-center justify-center mt-10 text-center w-full max-w-[686px] mx-auto ">
         <span
           className="text-[11px] sm:text-[13px] font-roboto text-white tracking-[3px] uppercase animate-fade-in-up font-normal mb-6 sm:mb-6 md:mb-3"
           style={{ textShadow: "0px 0px 4px #000000" }}
@@ -28,7 +56,7 @@ const HeroSection = () => {
         </span>
 
         <h1
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-helvetica font-bold text-white max-w-[686px] leading-[1.2] animate-fade-in-up animation-delay-200 tracking-[-1px] mb-8 sm:mb-10 md:mb-7"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-helvetica font-bold text-white max-w-[686px] leading-[1.2] animate-fade-in-up animation-delay-200 tracking-[-1px] mb-[30px]"
           style={{ textShadow: "0px 0px 25px rgba(0, 0, 0, 0.5)" }}
         >
           Bespoke & Made to Measure Handmade Kitchen Design
@@ -36,7 +64,7 @@ const HeroSection = () => {
 
         <div className="animate-fade-in-up animation-delay-400 mb-0">
           <button
-            className="group relative bg-[#D4B254] text-white font-roboto text-sm sm:text-[15px] rounded-[30px] px-8 sm:px-[50px] py-3 sm:py-[15px] font-normal transition-all duration-300"
+            className="group relative bg-[#D4B254] hover:bg-[#C8A74B] hover:cursor-pointer text-white font-roboto px-[59px] py-[20px] text-sm sm:text-[15px] rounded-[30px] font-normal transition-all duration-300"
             style={{
               boxShadow: "0px 2px 10px rgba(0, 0, 0, 0.2)",
               letterSpacing: "3px",
