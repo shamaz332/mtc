@@ -22,18 +22,17 @@ const FeaturesSection = () => {
           <span className="text-[13px] font-roboto font-normal tracking-[3px] uppercase text-[#D4B254] mb-1 2xl:mb-3 block">
             QUALITY CRAFTSMANSHIP FROM BUILD TO DELIVERY
           </span>
-          <h2 className="text-2xl sm:text-3xl 2xl:text-[42px] flex font-helvetica font-bold text-[#222222] leading-tight mb-4 2xl:mb:8 max-w-[520px]">
+          <h2 className="text-lg md:text-xl 2xl:text-2xl flex font-helvetica font-bold text-[#222222] leading-tight mb-4 xl:mb-[33px] max-w-[520px]">
             Discover the beauty of a handmade kitchen
           </h2>
-          <p className="text-sm sm:text-base font-roboto font-normal text-[#777777] mb-4 md:mb-2 2xl:mb:8 max-w-[630px] pr-12 2xl:pr-0">
+          <p className="text-xs sm:text-[15px] font-roboto font-normal text-[#777777] mb-4 md:mb-2 xl:mb-[27px] max-w-[630px] pr-0 sm-12 2xl:pr-0 text-center sm:text-left">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget
             est sit amet sapien venenatis maximus vel in urna. Nam mauris arcu,
             feugiat in finibus vitae, sollicitudin id purus. Ut imperdiet, magna
             eu pharetra tincidunt, mauris purus ultrices.
           </p>
           <button
-            className="group relative bg-[#D4B254] hover:bg-[#C8A74B] hover:cursor-pointer text-white font-roboto px-[59px] py-[20px] text-sm sm:text-[15px] rounded-[30px] font-normal transition-all duration-300">
-            {/* className="bg-[#D4B254] text-white font-roboto text-[15px] rounded-[30px] px-8 py-3 uppercase tracking-[3px] transition-all duration-300 hover:opacity-90 h-auto w-auto md:h-[60px] md:w-[211px]"> */}
+            className="group relative bg-[#D4B254] hover:bg-[#C8A74B] hover:cursor-pointer tracking-[3px] text-white font-roboto px-[50px] py-[20px] text-sm sm:text-[15px] rounded-[30px] w-auto md:h-[60px] md:w-[211px] font-normal transition-all duration-300">
             ABOUT US
           </button>
         </div>

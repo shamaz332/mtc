@@ -34,7 +34,12 @@ const config: Config = {
         '3xl': '52px',
       },
       screens: {
-        // Add custom breakpoints if needed
+        'xs': '480px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
       },
       keyframes: {
         'fade-in-up': {

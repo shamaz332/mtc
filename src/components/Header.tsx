@@ -153,7 +153,7 @@ const Header = () => {
             </a>
             <a
               href="#"
-              className="text-[13px] font-normal uppercase text-white tracking-[3px]"
+              className="text-[13px] font-normal uppercase text-white tracking-[3px] text-center"
             >
               Plan My Kitchen
             </a>

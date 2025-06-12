@@ -22,7 +22,7 @@ const HeroSection = () => {
   }, [slides.length]);
 
   return (
-    <section className="relative w-full h-screen flex flex-col items-center justify-end overflow-hidden px-4 md:px-8 lg:px-16">
+    <section className="relative w-full h-[700px] lg:h-[902px] flex flex-col items-center justify-end overflow-hidden px-4 md:px-8 lg:px-16">
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         <div
           className="flex transition-transform duration-500 ease-in-out"
@@ -32,13 +32,13 @@ const HeroSection = () => {
           }}
         >
           {slideImages.map((image, index) => (
-            <div key={index} className="w-full h-screen flex-shrink-0"
+            <div key={index} className="w-full h-[700px] lg:h-[902px] flex-shrink-0"
             style={{ flex: "0 0 100vw" }}>
               <Image
                 src={image}
                 alt={`Slide ${index + 1}`}
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: "cover" }}
                 priority
               />
             </div>
@@ -56,7 +56,7 @@ const HeroSection = () => {
         </span>
 
         <h1
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-helvetica font-bold text-white max-w-[686px] leading-[1.2] animate-fade-in-up animation-delay-200 tracking-[-1px] mb-[30px]"
+          className="text-lg md:text-2xl lg:text-[52px] font-helvetica font-bold text-white max-w-[686px] leading-[1.2] animate-fade-in-up animation-delay-200 tracking-[-1px] mb-[30px]"
           style={{ textShadow: "0px 0px 25px rgba(0, 0, 0, 0.5)" }}
         >
           Bespoke & Made to Measure Handmade Kitchen Design
@@ -64,7 +64,7 @@ const HeroSection = () => {
 
         <div className="animate-fade-in-up animation-delay-400 mb-0">
           <button
-            className="group relative bg-[#D4B254] hover:bg-[#C8A74B] hover:cursor-pointer text-white font-roboto px-[59px] py-[20px] text-sm sm:text-[15px] rounded-[30px] font-normal transition-all duration-300"
+            className="group relative bg-[#D4B254] hover:bg-[#C8A74B] hover:cursor-pointer text-white font-roboto px-[59px] py-[20px] text-xs sm:text-[15px] rounded-[30px] font-normal transition-all duration-300"
             style={{
               boxShadow: "0px 2px 10px rgba(0, 0, 0, 0.2)",
               letterSpacing: "3px",

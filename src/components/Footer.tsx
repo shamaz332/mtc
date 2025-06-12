@@ -16,29 +16,29 @@ const Footer = () => {
       </div>
 
       <div className="max-w-7xl mx-auto relative z-20">
-        <div className="mb-12 flex items-center justify-center relative">
+        <div className="mb-8 md:mb-12 flex items-center justify-center relative">
           {/* Flex container for Left and Right horizontal lines */}
           <div className="flex items-center justify-center w-full">
             {/* Left horizontal line */}
-            <div className="flex-grow h-px bg-white opacity-30 mr-4"></div>
+            <div className="flex-grow h-px bg-white opacity-30 mr-3 xs:mr-4"></div>
 
             {/* Logo */}
             <Image src="/assets/logo.svg" alt="MK Logo" width={84} height={33} />
 
             {/* Right horizontal line */}
-            <div className="flex-grow h-px bg-white opacity-30 ml-4"></div>
+            <div className="flex-grow h-px bg-white opacity-30 ml-3 xs:ml-4"></div>
           </div>
         </div>
 
         <div className="flex justify-center mt-[44px]">
           {/* Navigation Links - Horizontal Layout */}
-          <div className="flex flex-col sm:flex-row text-left gap-10 lg:gap-20 2xl:gap-30">
+          <div className="flex flex-col sm:flex-row text-center sm:text-left gap-10 lg:gap-20 2xl:gap-30">
             {/* About Column */}
-            <div className="mb-8 lg:mb-12">
-              <h3 className="font-helvetica text-lg lg:text-2xl tracking-[3px] mb-7 font-bold text-white">
+            <div className="mb-6 xs:mb-8 lg:mb-12">
+              <h3 className="font-helvetica text-base lg:text-lg tracking-[3px] mb-4 xs:mb-7 font-bold text-white">
                 About
               </h3>
-              <ul className="space-y-2">
+              <ul className="space-y-1.5 sm:space-y-2">
                 <li>
                   <a
                     href="#"
@@ -76,7 +76,7 @@ const Footer = () => {
 
             {/* Service Column */}
             <div className="mb-8 sm:mb-12">
-              <h3 className="font-helvetica text-lg lg:text-2xl tracking-[3px] mb-7 font-bold text-white">
+              <h3 className="font-helvetica text-base lg:text-lg tracking-[3px] mb-7 font-bold text-white">
                 Service
               </h3>
               <ul className="space-y-3">
@@ -117,7 +117,7 @@ const Footer = () => {
 
             {/* Info Column */}
             <div className="mb-8 sm:mb-12">
-              <h3 className="font-helvetica text-lg lg:text-2xl tracking-[3px] mb-7 font-bold text-white">
+              <h3 className="font-helvetica text-base lg:text-lg tracking-[3px] mb-7 font-bold text-white">
                 Info
               </h3>
               <ul className="space-y-3">
@@ -150,10 +150,10 @@ const Footer = () => {
 
             {/* Follow Column */}
             <div className="mb-8 sm:mb-12">
-              <h3 className="font-helvetica text-lg lg:text-2xl tracking-[3px] mb-7 font-bold text-white">
+              <h3 className="font-helvetica text-base lg:text-lg tracking-[3px] mb-7 font-bold text-white">
                 Follow
               </h3>
-              <div className="flex gap-4 pl-2">
+              <div className="flex gap-4">
                 {/* Facebook Icon */}
                 <a href="#" className="cursor-pointer bg-white p-2 rounded-full hover:bg-[#D4B254] transition-colors">
                   <svg

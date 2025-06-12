@@ -66,7 +66,7 @@ const AboutUsSection = () => {
           <span className="text-[13px] font-roboto font-normal tracking-[3px] uppercase text-[#D4B254] mb-4 block">
             WHAT OUR CUSTOMERS SAY
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-[32px] font-helvetica font-bold text-[#222222] leading-tight mb-6">
+          <h2 className="text-base sm:text-lg lg:text-[32px] font-helvetica font-bold text-[#222222] leading-tight mb-6">
             {reviews[currentReviewIndex].title}
           </h2>
           <p className="text-sm sm:text-base font-roboto font-normal text-[#777777] mb-[11px] max-w-2xl mx-auto">
